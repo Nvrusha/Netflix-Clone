@@ -1,6 +1,8 @@
 # 🎬 Netflix Clone 🎨
 
 Welcome to my Netflix Clone, built entirely using HTML5 and CSS3! 🚀 In this project, I set out to recreate the sleek, iconic Netflix UI, and along the way, I picked up some great skills:
+### Website Link 🔗
+https://nvrusha.github.io/Netflix-Clone/
 
 ### Semantic HTML 🏗️:
 Structuring the page with meaning, making it accessible and SEO-friendly.
