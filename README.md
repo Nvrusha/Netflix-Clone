@@ -1,4 +1,4 @@
-# 🎬 Netflix Clone 🎨
+# 🎬 Netflix Clone 📺
 
 Welcome to my Netflix Clone, built entirely using HTML5 and CSS3! 🚀 In this project, I set out to recreate the sleek, iconic Netflix UI, and along the way, I picked up some great skills:
 ### Website Link 🔗
