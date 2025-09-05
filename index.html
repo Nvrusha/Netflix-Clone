@@ -2,54 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title shown in the browser tab -->
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <!-- Website favicon -->
     <link rel="icon" href="/Assets/Images/favicon.ico" />
+    <!-- External CSS file -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Main container for entire page -->
     <div class="main">
 
+      <!-- Navigation bar -->
       <nav>
+        <!-- Netflix logo -->
         <span><img class="netflix" src="logo.svg" alt="Netflix_Logo" /></span>
         <div>
+          <!-- Language selector icon -->
           <div class="svg">
             <svg xmlns="http://www.w3.org/2000/svg" fill="rgb(255, 255, 255)" width="16" height="16" viewBox="0 0 16 16" role="img" data-icon="LanguagesSmall" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg>
           </div>
+          <!-- Dropdown to choose language -->
           <select class="btn-eng select" name="lang">
             <option value="English">English</option>
             <option value="हिन्दी">हिन्दी</option>
           </select>
 
+          <!-- Sign in button -->
           <button class="btn-red-sm hover">Sign in</button>
         </div>
       </nav>
 
+      <!-- Background overlay box -->
       <div class="box"></div>
 
+      <!-- Hero section (main heading and email input) -->
       <div class="hero">
         <span>Unlimited movies, TV shows and more</span>
         <span class="watch">Watch anywhere. Cancel anytime.</span>
-        <span
-          >Ready to watch? Enter your email to create or restart your
-          membership.</span
-        >
+        <span>
+          Ready to watch? Enter your email to create or restart your
+          membership.
+        </span>
          <form action="">
           <div class="hero-btn">
-            
-              <input id="mail" type="email" placeholder="Email address"/>
+            <!-- Email input field -->
+            <input id="mail" type="email" placeholder="Email address"/>
+            <!-- Get Started button with arrow icon -->
             <button id="mail" class="btn-red hover">
               Get Started <img class="arrow" src="Arrow.svg" alt="arrow" />
             </button>
           </div>
-
          </form>
-       
       </div>
     </div>
 
+    <!-- Horizontal divider -->
     <div class="line"></div>
 
+    <!-- Section 1: Watch on TV -->
     <section class="first">
       <div>
         <h2>Enjoy on your TV</h2>
@@ -58,6 +71,7 @@
           players and more.
         </p>
       </div>
+      <!-- Image + video overlay -->
       <div class="secImg1">
         <img
           src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
@@ -74,19 +88,20 @@
 
     <div class="line"></div>
 
+    <!-- Section 2: Download shows -->
     <section class="first">
       <div class="secImg1">
         <img
           src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
           alt="Stranger_things"
         />
+        <!-- Download animation box -->
         <div class="download">
           <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="Stranger_things">
           <div>
           <span>Stranger Things</span>
           <span class="blue">Downloading...</span>
           </div>
-          
           <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" alt="">
         </div>
       </div>
@@ -97,10 +112,11 @@
           Save your favourites easily and always have something to watch.
         </p>
       </div>
-      
     </section>
 
     <div class="line"></div>
+
+    <!-- Section 3: Watch everywhere -->
     <section class="first">
       <div>
         <h2>Watch everywhere</h2>
@@ -121,8 +137,10 @@
         ></video>
       </div>
     </section>
+
     <div class="line"></div>
 
+    <!-- Section 4: Kids profile -->
     <section class="first">
       <div class="secImg1">
         <img
@@ -136,100 +154,72 @@
           Send children on adventures with their favourite characters in a space made just for them—free with your membership.
         </p>
       </div>
-      
     </section>
+
     <div class="line"></div>
 
+    <!-- FAQ Section -->
     <section class="faq">
       <h2>
         Frequently Asked Questions
       </h2>
-      <div class="faq-box">
-      <span>
-        What is Netflix?
-      </span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
-        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-    </div>
 
-     <div class="faq-box">
-      <span>
-        How much does Netflix cost?
-      </span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="white">
-        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-     </div>
+      <!-- Individual FAQ items -->
+      <div class="faq-box">
+      <span>What is Netflix?</span>
+      <!-- Plus icon -->
+      <svg ...></svg>
+      </div>
 
-     <div class="faq-box">
-      <span>
-        Where can I watch?
-      </span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="white">
-        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-     </div>
-     
-     <div class="faq-box">
-      <span>
-        How do I cancel?
-      </span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="white">
-        <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-     </div>
-      
       <div class="faq-box">
-        <span>
-          What can I watch on Netflix?
-        </span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="white">
-          <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
+      <span>How much does Netflix cost?</span>
+      <svg ...></svg>
       </div>
-      
+
       <div class="faq-box">
-        <span>
-          Is Netflix good for kids?
-        </span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="white">
-          <path d="M12 4V20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
+      <span>Where can I watch?</span>
+      <svg ...></svg>
       </div>
-      
-    </div>
+
+      <div class="faq-box">
+      <span>How do I cancel?</span>
+      <svg ...></svg>
+      </div>
+
+      <div class="faq-box">
+      <span>What can I watch on Netflix?</span>
+      <svg ...></svg>
+      </div>
+
+      <div class="faq-box">
+      <span>Is Netflix good for kids?</span>
+      <svg ...></svg>
+      </div>
+    </section>
+
+    <!-- Repeated email signup section -->
     <div class="hero">
       <span class="ready">Ready to watch? Enter your email to create or restart your
         membership.</span>
-
         <form action="">
           <div class="hero-btn">
               <input id="mail" type="email" placeholder="Email address"/>
-
-            <button id="mail" class="btn-red hover">
-              Get Started <img class="arrow" src="Arrow.svg" alt="arrow" />
-            </button>
+              <button id="mail" class="btn-red hover">
+                Get Started <img class="arrow" src="Arrow.svg" alt="arrow" />
+              </button>
           </div>
-
-         </form>
+        </form>
     </div>
-       
-      </div>
-    </section>
+
     <div class="line"></div>
 
+    <!-- Footer section -->
     <footer>
       <div class="question">
         Questions? Call 000-800-919-1694
       </div>
       
+      <!-- Footer links in 4 columns -->
       <div class="footer">
         <div class="footer-item">
           <a href="faq">FAQ</a>
@@ -239,39 +229,27 @@
         </div>
         <div class="footer-item">
           <a href="faq">Help Centre</a>
-          <a href="invest">
-            Jobs</a>
-          <a href="">
-            Cookie Preferences</a>
-          <a href="">
-            Legal Notices</a>
+          <a href="invest">Jobs</a>
+          <a href="">Cookie Preferences</a>
+          <a href="">Legal Notices</a>
         </div>
         <div class="footer-item">
-          <a href="faq">
-            Account</a>
-          <a href="invest">
-            Ways to Watch</a>
-          <a href="">
-            Corporate Informationt</a>
-          <a href="">
-            Only on Netflix</a>
-         
+          <a href="faq">Account</a>
+          <a href="invest">Ways to Watch</a>
+          <a href="">Corporate Informationt</a>
+          <a href="">Only on Netflix</a>
         </div>
         <div class="footer-item">
-          <a href="faq">
-            Media Centre</a>
-          <a href="invest">
-            Terms of Use</a>
-          <a href="">
-            Contact Us</a>
-         
+          <a href="faq">Media Centre</a>
+          <a href="invest">Terms of Use</a>
+          <a href="">Contact Us</a>
         </div>
-
       </div>
 
+      <!-- Language selector at footer -->
       <div>
         <div class="svg">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="rgb(255, 255, 255)" width="16" height="16" viewBox="0 0 16 16" role="img" data-icon="LanguagesSmall" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg>
+          <svg ...></svg>
         </div>
         <select class="btn-eng select" name="lang">
           <option value="English">English</option>
@@ -279,10 +257,10 @@
         </select>
       </div>
 
+      <!-- Footer branding -->
       <div class="end">
         Netflix India
       </div>
-      
     </footer>
   </body>
 </html>
